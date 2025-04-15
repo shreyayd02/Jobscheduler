@@ -1,0 +1,19 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/yugabyte
+    username: yugabyte
+    password: yugabyte
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+kafka:
+  bootstrap-servers: localhost:9092
+
+minio:
+  url: http://localhost:9000
+  access-key: minio
+  secret-key: minio123
+  bucket: job-binaries
